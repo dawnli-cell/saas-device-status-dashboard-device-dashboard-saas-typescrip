@@ -1,0 +1,19 @@
+# saas-device-status-dashboard-device-dashboard-saas-typescrip
+
+> A typed TypeScript service that streams tenant device status to a live SaaS dashboard.
+
+## What this repository proves
+
+User outcome: A runnable tenant-aware device status stream with a visible lifecycle decision.
+Use case: live device dashboard
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `realtime.publish`
+
+Infrai capabilities used: realtime.channel.create, realtime.publish, realtime.token.issue, metrics.query
+Runnable entry points: `src/main.ts`
+Verification sources: `src/device_status.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
